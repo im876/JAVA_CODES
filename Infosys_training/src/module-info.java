@@ -1,2 +1,0 @@
-module infosys_Training {
-}
