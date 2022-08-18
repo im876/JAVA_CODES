@@ -13,6 +13,10 @@ public class hello_world {
 		
 		//Shortcut for typing println : sysout, then ctrs+space
 		System.out.println("shortcut try");
+		
+		
+		//using keywords
+		System.out.println("Square of 2 = " + 2*2);
 	}
 
 }
