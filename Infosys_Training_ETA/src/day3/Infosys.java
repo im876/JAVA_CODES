@@ -59,7 +59,7 @@ public class Infosys {
 			System.out.println(" ");
 			break;
 		default :
-			System.out.println("Enter Valid Data");
+			System.out.println("Enter Valid Data : ");
 		}
 	}
 
