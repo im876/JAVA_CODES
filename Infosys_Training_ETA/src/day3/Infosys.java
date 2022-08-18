@@ -6,6 +6,8 @@ public class Infosys {
 		
 		Scanner sc= new Scanner(System.in);
 		// TODO Auto-generated method stub
+		
+		//creating three objects
 		Employee IM = new Employee();
 		IM.EmpID = 101;
 		IM.Name = "Ishan Modi";
@@ -27,7 +29,19 @@ public class Infosys {
 		IP.dob = "23.02.01";
 		IP.blood_grp = "B+";
 		
-		System.out.print("Enter Employee Number - ");  
+		//testing parameterized constructor
+		Employee ishita = new Employee("Ishita");
+		
+		//printing values of object IM
+		System.out.println(" ");
+		System.out.println("Emp ID : "+IM.EmpID);
+		System.out.println("Name : "+IM.Name);
+		System.out.println("Address : "+IM.Address);
+		System.out.println("DOB : "+IM.dob);
+		System.out.println("Blood Group : "+IM.blood_grp);
+		
+		
+		/*System.out.print("Enter Employee Number - ");  
 		int search= sc.nextInt();  
 		
 		switch(search)
@@ -60,7 +74,9 @@ public class Infosys {
 			break;
 		default :
 			System.out.println("Enter Valid Data : ");
-		}
+		} */
+		
+		
 	}
 
 }
@@ -73,4 +89,17 @@ class Employee
 	String Address;
 	String dob;
 	String blood_grp;
+	
+	//constructor - Default or non parameterized
+	Employee()
+	{
+		System.out.println("Welcome to Infosys");
+	}
+	
+	//constructor - Parameterized
+	Employee(String name)
+	{
+		System.out.println("Hi");
+		System.out.println("Welcome "+name);
+	}
 }
