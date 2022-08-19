@@ -1,12 +1,12 @@
 package day3;
 
-public class Infosys {	
+public class Infosys_trainer_2 {	
 
 	public static void main(String[] args) {
 
-		Employee dk = new Employee(101, "Dineshkumar", "Chennai", "06-02-1991","A1B", 50000);						
+		Employee4 dk = new Employee4(101, "Dineshkumar", "Chennai", "06-02-1991","A1B", 50000);						
 		
-		Employee vidya = new Employee(103, "VidyaSree", "Hydrebad", "01-02-2001", "B", 50000);
+		Employee4 vidya = new Employee4(103, "VidyaSree", "Hydrebad", "01-02-2001", "B", 50000);
 		
 		dk.printId();
 		vidya.printId();
@@ -17,7 +17,7 @@ public class Infosys {
 
 }
 
-class Employee{
+class Employee4{
 	
 	//Instance Variable
 	
@@ -30,13 +30,13 @@ class Employee{
 	double experience;
 	
 	//Constructor - Default or Non-Parameterized
-	Employee(){
+	Employee4(){
 		
 		System.out.println("Welcome To Infosys");
 	}
 	
 	//Constructor - Parameterize
-	public Employee(String name) {
+	public Employee4(String name) {
 		
 		this();
 		
@@ -44,7 +44,7 @@ class Employee{
 		this.name = name;
 	}
 
-	public Employee(int empId, String name, String address, String dob, String bloodGr, double salary) {
+	public Employee4(int empId, String name, String address, String dob, String bloodGr, double salary) {
 		
 		this(name);
 		
