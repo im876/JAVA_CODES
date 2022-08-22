@@ -12,10 +12,9 @@ public class a_013_food_order {
 		int v = 12;
 		int nv = 15;
 		char input;
-		int delivery_charge = 0;
 		int total_cost = 0;
 		int quantity;
-
+		int temp = 0;
 		System.out.println("Hi, welcome to Hotel");
 		System.out.print("Enter 'v' for veg and 'n' for non veg: ");
 		input = sc.next().charAt(0);
@@ -38,10 +37,33 @@ public class a_013_food_order {
 				{
 				case 'v':
 				case 'V': total_cost = quantity * v;
-					System.out.println(total_cost);
 					break;
 				case 'n':
 				case 'N': total_cost = quantity * nv;
+				}
+				System.out.print("Please enter the delivery distance: ");
+				int distance = sc.nextInt();
+				if(distance > 0)
+				{
+					if(distance <= 3)
+					{
+						total_cost = total_cost + 0;
+					}
+					else if(distance <= 6)
+					{
+						temp = distance - 3;
+						total_cost = total_cost + (temp * 1);
+					}
+					else
+					{
+						temp = distance - 6;
+						total_cost = total_cost + 3 + (temp*2);
+					}
+					System.out.println("Your Total Bill : " + total_cost);
+				}
+				else
+				{
+					System.out.println("Please Begin again we are redirecting you to main page!");
 				}
 			}
 			else
