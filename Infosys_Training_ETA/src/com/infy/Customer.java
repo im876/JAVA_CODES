@@ -42,7 +42,7 @@ class Tester_hotel {
 
 		// Object creation
 		Customer customer = new Customer();
-		customer.displayCustomerDetails();
+		
 		// Assigning values to the instance variables
 		customer.customerId = "C101";
 		customer.customerName = "Stephen Abram";
@@ -50,7 +50,7 @@ class Tester_hotel {
 		customer.address = "D089, St. Louis Street, Springfield, 62729";
 
 		// Displaying the customer details
-		
+		customer.displayCustomerDetails();
 		// Move the above statement immediately after the object creation
 		// statement and observe the output
 
