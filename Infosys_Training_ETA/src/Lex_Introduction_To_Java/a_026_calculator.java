@@ -5,7 +5,7 @@ public class a_026_calculator {
 	public static void main(String args[]) {
 		Tester calculator = new Tester();
 		// Invoke the method findAverage of the Calculator class and display the average
-		calculator.findAverage(2,3,4);
+		calculator.findAverage(12,8,15);
 	}
 
 }
@@ -13,9 +13,10 @@ public class a_026_calculator {
 class Tester {
 
 	// Implement your code here
-		public void findAverage(int number1, int number2, int number3)
+		public void findAverage(double number1, double number2, double number3)
 		{
-			System.out.println("bleh");
+			double average = (number1+number2+number3)/3;
+			System.out.println(Math.round(average*100.0)/100.0);
 		}
 	
 }
