@@ -95,6 +95,40 @@ class Customer
 }
 
 
+class bill
+{
+	public int orderID;
+	public String orderedFoods;
+	public double totalprice;
+	public String status;
+	public int unit_price = 20;
+	public bill()
+	{
+		System.out.println("Order Details");
+	}
+	public bill(int orderID, String orderedFoods ,String status)
+	{
+		this();
+		this.orderID = orderID;
+		this.orderedFoods = orderedFoods;
+		this.status = status;
+	}
+	public double totalprice()
+	{
+		totalprice = unit_price + ((5/100)*unit_price);
+		return totalprice;
+	}
+	public void displayTotal()
+	{
+		//this();
+		System.out.println("Displaying bill details \n***********");
+		System.out.println("Order Id : " + orderID);
+		System.out.println("Ordered Food : " + orderedFoods);
+		System.out.println("Status : " + status);
+		System.out.println("Total Bill : " + this.totalprice());
+	}
+}
+
 public class Tester_hotel 
 {
 
@@ -109,12 +143,17 @@ public class Tester_hotel
 		customer.customerName = "Stephen Abram";
 		customer.contactNumber = 7856341287L;
 		customer.address = "D089, St. Louis Street, Springfield, 62729";
-		customer.displayCustomerName();
+		//customer.displayCustomerName();
 		// Displaying the customer details
 		customer.displayCustomerDetails();
 		// Move the above statement immediately after the object creation
 		// statement and observe the output
-
+		
+		Customer customer1 = new Customer("C102","Ishan Modi",1234567892,"Pune");
+		customer1.displayCustomerDetails();
+		
+		bill bill1 = new bill(102, "Rice", "Ordered");
+		bill1.displayTotal();
 	}
 
 }
