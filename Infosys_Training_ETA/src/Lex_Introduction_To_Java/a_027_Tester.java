@@ -49,12 +49,6 @@ class Point {
 		return 0.0;
 	}*/
 	
-	public double result(double xCoordinate, double yCoordinate)
-	{
-		//System.out.println("bleh");
-		//return (Math.sqrt());
-		return 0.0;
-	}
 }
 
 
