@@ -37,8 +37,8 @@ class Point {
 	
 	public double calculateDistance(Point point)
 	{
-		double distance = Math.sqrt(((point.xCoordinate - xCoordinate)*(point.xCoordinate - xCoordinate))+
-                                    ((point.yCoordinate - yCoordinate)*(point.yCoordinate - yCoordinate)));
+		double distance = Math.sqrt(((point.xCoordinate - this.xCoordinate)*(point.xCoordinate - this.xCoordinate))+
+                                    ((point.yCoordinate - this.yCoordinate)*(point.yCoordinate - this.yCoordinate)));
 		return Math.round(distance*100)/100.0;
 	}
 	
